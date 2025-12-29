@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Fuite - Assainissement 81</title>
+    <link rel="icon" href="images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo-link">
+                <img src="images/Logo.png" alt="Assainissement 81 Logo" class="logo-img">
+            </a>
+            <div class="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <!-- Dropdown Menu Item: Travaux -->
+                    <li class="dropdown-item">
+                        <a href="travaux-assainissement.html">Travaux d'assainissement <span
+                                class="nav-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="travaux-assainissement.html">Vidange et pompage</a></li>
+                            <li><a href="debouchage-curage.html">Débouchage et curage</a></li>
+                            <li><a href="entretien-microstation.html">Entretien de microstation</a></li>
+                            <li><a href="entretien-poste-relevage.html">Entretien de station de relevage</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown Menu Item: Inspection -->
+                    <li class="dropdown-item">
+                        <a href="#" class="active">Inspection de canalisation <span class="nav-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="inspection-video.html">Inspection vidéo</a></li>
+                            <li><a href="recherche-de-fuite.html">Recherche de fuite</a></li>
+                            <li><a href="rehabilitation-canalisation.html">Réhabilitation de canalisations et
+                                    d'ouvrages</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Travaux de nettoyage <span class="nav-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nettoyage-de-puits.html">Nettoyage de puits</a></li>
+                            <li><a href="travaux-petroliers.html">Travaux pétroliers</a></li>
+                            <li><a href="nettoyage-specifique.html">Nettoyage spécifique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="location-wc.html">Location de WC</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta-btn">CONTACTEZ-NOUS</a>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <img src="images/En-tête 2 copie.png" alt="Recherche de Fuite" class="page-hero-bg"> <!-- Placeholder image -->
+
+        <div class="container page-hero-content">
+            <h1>RECHERCHE DE FUITE</h1>
+            <div class="hero-underline"></div>
+            <p>Intervention rapide 24h/24 et 7j/7</p>
+        </div>
+    </section>
+
+    <!-- Intro Section: LA RECHERCHE DE FUITE (Left text, Right Image) -->
+    <section class="inspection-intro-section">
+        <div class="container inspection-intro-grid">
+            <div class="inspection-intro-content">
+                <h2>LA RECHERCHE DE FUITE</h2>
+                <h3>À quoi sert la recherche de fuite ?</h3>
+                <p>La recherche de fuite permet d'identifier précisément l'origine d'une infiltration ou d'une fuite non
+                    visible, sans casser ni dégrader vos installations. </p>
+                <p>Grâce à des outils professionnels (caméra thermique, détection électro-acoustique, gaz traceur...),
+                    nous localisons la fuite rapidement pour éviter des dégâts importants et des réparations coûteuses.
+                </p>
+            </div>
+            <div class="inspection-intro-image">
+                <img src="images/Recherche de fuite/test a l'eau sous pression d'une conduite de reseau incendie pour un centre commercial.JPG"
+                    alt="Recherche de Fuite">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Current Section (Collage Left, Text Right) -->
+    <!-- Reusing "problems-detected-section" structure -->
+    <section class="problems-detected-section">
+        <div class="container problems-detected-grid">
+            <div class="problems-collage-wrapper">
+                <div class="collage-grid">
+                    <img src="images/Recherche de fuite/reparation de la fuite sur le reseau eau potable d'un particulier.JPG"
+                        alt="Fuite Sol" class="collage-img">
+                    <img src="images/Recherche de fuite/RECHERCHE DE FUITE MATERIEL.jpg" alt="Equipement Fuite"
+                        class="collage-img">
+                    <img src="images/Recherche de fuite/Recherche de fuite 3.jpeg" alt="Tuyaux" class="collage-img">
+                </div>
+            </div>
+            <div class="problems-detected-content">
+                <h2>PROBLÈMES COURANTS</h2>
+                <h3>Quand faire une recherche de fuite ?</h3>
+                <ul class="problems-list">
+                    <li>Apparition d'humidité, auréoles ou moisissures</li>
+                    <li>Surconsommation d'eau anormale</li>
+                    <li>Odeurs d'humidité ou de moisi</li>
+                    <li>Chauffage ou plancher chauffant qui perd en efficacité</li>
+                    <li>Baisse de pression dans le réseau</li>
+                    <li>Infiltration dans un mur ou plafond</li>
+                    <li>Eau qui remonte en surface (extérieur)</li>
+                    <li>Fuite non localisée après débouchage</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods Section (Green Cards) -->
+    <!-- Reusing "services-detailed-section" structure -->
+    <section class="services-detailed-section" style="background-color: white">
+        <div class="container services-width">
+            <h2
+                style="text-align: center; margin-bottom: 50px; color: #00609c; font-size: 2.5rem; font-weight:900; text-transform:uppercase;">
+                NOS MÉTHODES
+            </h2>
+
+            <div class="services-detailed-grid">
+                <!-- Card 1 -->
+                <div class="service-detailed-card">
+                    <h3>DÉTECTION PAR CAMÉRA THERMIQUE</h3>
+                    <p>Localisation des variations de température liées à une fuite dans les réseaux encastrés (murs,
+                        sols, planchers chauffants).</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-detailed-card">
+                    <h3>DÉTECTION ÉLECTRO-ACOUSTIQUE</h3>
+                    <p>Écoute précise des vibrations générées par l'eau sous pression pour repérer la fuite sans
+                        destruction.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-detailed-card">
+                    <h3>DÉTECTION PAR GAZ TRACEUR</h3>
+                    <p>Injection d'un gaz neutre pour repérer même les plus petites fuites, invisibles à l'œil nu.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-detailed-card">
+                    <h3>INSPECTION CAMÉRA ENDOSCOPIQUE</h3>
+                    <p>Inspection de canalisations, siphons et zones inaccessibles pour localiser l'origine de la fuite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section-grey">
+        <div class="container services-width">
+            <h2>COMMENT SE DÉROULE UN ENTRETIEN ?</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <h4>Prise de contact</h4>
+                    <p>Analyse de votre problème et de votre installation.</p>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <h4>Contrôle visuel</h4>
+                    <p>Inspection extérieure des zones suspectes (murs, sols, réseaux).</p>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <h4>Test et détection</h4>
+                    <p>Recherche de fuite avec nos différents outils selon la situation.</p>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <h4>Localisation précise</h4>
+                    <p>Identification de la zone exacte où se trouve le défaut.</p>
+                </div>
+                <div class="process-arrow">→</div>
+
+                <div class="process-step">
+                    <h4>Rapport et conseils</h4>
+                    <p>Remise d'un diagnostic et nous vous donnons des solutions de réparation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <!-- Reusing "why-us-section" structure but customized content -->
+    <section class="why-us-section-station-de-relevage">
+        <div class="container why-us-grid">
+            <div class="why-us-content">
+                <h2>POURQUOI ?</h2>
+                <p class="why-us-intro">Pourquoi faire une recherche de fuite ?</p>
+                <div style="margin-bottom: 20px; color: #444; line-height: 1.6;">
+                    Une fuite non localisée peut provoquer des dégâts importants : infiltrations, dégradations,
+                    moisissures, affaissements, surconsommation d'eau...<br>
+                    La recherche de fuite permet de limiter les dommages et d'éviter des travaux inutiles.
+                </div>
+                <p style="margin-bottom: 10px;">Elle est indispensable si :</p>
+                <ul class="why-us-list">
+                    <li>Vous constatez une hausse inexpliquée de votre facture d'eau</li>
+                    <li>Vous avez de l'humidité dans une pièce</li>
+                    <li>Une odeur d'eau stagnante apparaît</li>
+                    <li>Un mur gondole ou change de couleur</li>
+                    <li>Vous suspectez une fuite sous dalle ou sous carrelage</li>
+                </ul>
+                <p style="font-weight: bold; color: #222;">Avantage clé : <span style="font-weight: normal;">Méthode
+                        100% non destructive (aucune casse)</span></p>
+            </div>
+            <!-- Image Left/Right logic is swapped in CSS for "why-us-grid" ? No, usually text left, image right. 
+             But image 2 provided says "POURQUOI ?" and text is on the RIGHT. 
+             So in this section, we want Image Left, Text Right. 
+             By default .why-us-grid is grid-template-columns: 1fr 1fr;
+             If I put image FIRST in HTML, it will be distinct.
+             Let's check existing .why-us-grid usage. Usually Text First.
+             I will place Image DIV first here for this specific page section if I want that layout, 
+             OR I can use "inspection-intro-grid" structure which supports text left image right, or swap.
+             Actually, let's look at the uploaded image 2. It shows Image Left, Text Right.
+             And Title "POURQUOI ?". It's similar to "Problèmes detected" but with text on right.
+             Let's use a similar structure or just Image first in grid.
+             -->
+            <div class="why-us-image" style="order: -1;">
+                <!-- Inline order to swap for this instance, or just put it first in HTML -->
+                <img src="images/Recherche de fuite/Recherche de fuite 2.jpeg" alt="Tuyau percé eau">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section-station-de-relevage" style="background-color: var(--color-bg-light);">
+        <div class="container why-us-grid">
+            <div class="why-us-content">
+                <h2>POURQUOI NOUS CHOISIR ?</h2>
+                <p class="why-us-intro">Chez Assainissement 81, nous assurons un service rapide et de bonne qualité !
+                </p>
+                <ul class="why-us-list">
+                    <li>Intervention rapide <strong>24h/24 et 7j/7</strong></li>
+                    <li>Déplacement dans le <strong>Tarn (81)</strong> et l'<strong>Hérault (34)</strong> (ex : La-Salvetat-sur-Agout)</li>
+                    <li>Débouchage durable et non temporaire</li>
+                    <li>Entreprise locale depuis plus de 20 ans</li>
+                    <li>Devis gratuit sans frais cachés</li>
+                </ul>
+                <a href="contact.html" class="btn btn-why-us">Demander un devis</a>
+            </div>
+            <div class="why-us-image">
+                <img src="images/Camion - Lauragais.webp" alt="Camion Assainissement 81">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <div class="footer-cta-bar footer-cta-white">
+        <div class="container footer-cta-inner">
+            <div class="footer-cta-text">
+                <h3>Besoin d'une intervention ?</h3>
+                <p style="font-size: 0.85rem; color: #666;">Nos équipes sont disponibles 24h/24 et 7j/7 pour répondre à
+                    toutes vos demandes d'assainissement, débouchage, inspection et nettoyage.</p>
+                <a href="tel:0563984896" class="footer-cta-phone"
+                    style="margin-top: 5px; color: #003366; font-weight: bold; display: flex; align-items: center; gap: 5px; text-decoration: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#003366">
+                        <path
+                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.161 15.161 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1.01A11.36 11.36 0 018.59 3.99C8.59 3.44 8.14 3 7.59 3H4.05C3.5 3 3 3.44 3 3.99 3 13.28 10.73 21 20.01 21c.55 0 .99-.44 .99-.99v-3.61c-.01-.55-.45-1.02-1.01-1.02z" />
+                    </svg>
+                    05 63 98 48 96
+                </a>
+            </div>
+            <a href="contact.html" class="btn btn-cta">Contactez-nous</a>
+        </div>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="footer-main">
+        <div class="container footer-grid">
+            <div class="footer-col-left">
+                <div class="footer-logo-box">
+                    <img src="images/Logo.png" alt="Logo Assainissement 81">
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col-center">
+                <h4>SITEMAP</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="travaux-assainissement.html">Travaux d'assainissement</a></li>
+                    <li><a href="#">Inspection de canalisation</a></li>
+                    <li><a href="#">Travaux de nettoyage</a></li>
+                    <li><a href="#">Location de WC</a></li>
+                </ul>
+                <div class="footer-divider-line"></div>
+                <div class="footer-contact-details">
+                    +33 5 63 98 48 96<br>
+                    assainissement81@assainissement81.com
+                </div>
+            </div>
+
+            <div class="footer-col-right">
+                <a href="contact.html" class="btn-footer-contact">Nous Contacter</a>
+                <div class="footer-legal-block">
+                    <div class="footer-legals">
+                        <span>Mentions légales</span>
+                        <span>CGV</span>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2025 — Nicolas Delepaut<br>All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

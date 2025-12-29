@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Assainissement 81</title>
+    <link rel="icon" href="images/Logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="logo-link">
+                <img src="images/Logo.png" alt="Assainissement 81 Logo" class="logo-img">
+            </a>
+            <div class="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <!-- Dropdown Menu Item: Travaux -->
+                    <li class="dropdown-item">
+                        <a href="travaux-assainissement.html">Travaux d'assainissement <span
+                                class="nav-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="travaux-assainissement.html">Vidange et pompage</a></li>
+                            <li><a href="debouchage-curage.html">Débouchage et curage</a></li>
+                            <li><a href="entretien-microstation.html">Entretien de microstation</a></li>
+                            <li><a href="entretien-poste-relevage.html">Entretien de station de relevage</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown Menu Item: Inspection -->
+                    <li class="dropdown-item">
+                        <a href="#">Inspection de canalisation <span class="nav-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="inspection-video.html">Inspection vidéo</a></li>
+                            <li><a href="recherche-de-fuite.html">Recherche de fuite</a></li>
+                            <li><a href="rehabilitation-canalisation.html">Réhabilitation de canalisations et
+                                    d'ouvrages</a></li>
+                        </ul>
+                    </li>
+                    <!-- Dropdown Menu Item: Nettoyage -->
+                    <li class="dropdown-item">
+                        <a href="#">Travaux de nettoyage <span class="nav-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="nettoyage-de-puits.html">Nettoyage de puits</a></li>
+                            <li><a href="travaux-petroliers.html">Travaux pétroliers</a></li>
+                            <li><a href="nettoyage-specifique.html">Nettoyage spécifique</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="location-wc.html">Location de WC</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="cta-btn">CONTACTEZ-NOUS</a>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-page-section">
+        <div class="container contact-form-container">
+            <h1>Vous avez une question ou une demande d’intervention ?</h1>
+            <p class="contact-subtitle">Contactez-nous dès maintenant</p>
+
+            <!-- REMPLACEZ L'URL CI-DESSOUS PAR VOTRE URL FORMSPREE (ex: https://formspree.io/f/votre_id) -->
+            <form class="contact-form" action="https://formspree.io/f/maqwrylq" method="POST">
+                <!-- Row: Nom / Prénom -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom">
+                    </div>
+                </div>
+
+                <!-- Row: Email / Tel -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                </div>
+
+                <!-- Row: Adresse Full -->
+                <div class="form-group full-width">
+                    <label for="adresse">Adresse *</label>
+                    <input type="text" id="adresse" name="adresse" required>
+                </div>
+
+                <!-- Row: Code postal / Ville -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="codepostal">Code postal</label>
+                        <input type="text" id="codepostal" name="codepostal">
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville</label>
+                        <input type="text" id="ville" name="ville">
+                    </div>
+                </div>
+
+                <!-- Row: Message -->
+                <div class="form-group full-width">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <!-- Checkboxes -->
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="privacy" name="politique_confidentialite" required>
+                    <label for="privacy">J'ai pris connaissance et j'accepte la Politique de confidentialité
+                        d’Assainissement 81</label>
+                </div>
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="prospection" name="accept_prospection">
+                    <label for="prospection">Je reconnais et j’accepte que mes données puissent être utilisées pour de
+                        la prospection commerciale pour Assainissement 81.</label>
+                </div>
+
+                <div class="form-disclaimer">
+                    *La réponse à ces champs est obligatoire pour traiter votre demande.
+                </div>
+
+                <button type="submit" class="btn btn-submit">Envoyer le message</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <div class="footer-cta-bar">
+        <div class="container footer-cta-inner">
+            <div class="footer-cta-text">
+                <h3>Besoin d'une intervention ou d'un devis ?</h3>
+                <p style="font-size: 0.85rem; color: #666;">Nos équipes sont disponibles 24h/24 et 7j/7 pour répondre à
+                    toutes vos demandes d'assainissement, débouchage, inspection et nettoyage.</p>
+                <a href="tel:0563984896" class="footer-cta-phone"
+                    style="margin-top: 5px; color: #003366; font-weight: bold; display: flex; align-items: center; gap: 5px; text-decoration: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#003366">
+                        <path
+                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.161 15.161 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1.01A11.36 11.36 0 018.59 3.99C8.59 3.44 8.14 3 7.59 3H4.05C3.5 3 3 3.44 3 3.99 3 13.28 10.73 21 20.01 21c.55 0 .99-.44 .99-.99v-3.61c-.01-.55-.45-1.02-1.01-1.02z" />
+                    </svg>
+                    05 63 98 48 96
+                </a>
+            </div>
+            <a href="contact.html" class="btn btn-cta">Contactez-nous</a>
+        </div>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="footer-main">
+        <div class="container footer-grid">
+            <div class="footer-col-left">
+                <div class="footer-logo-box">
+                    <img src="images/Logo.png" alt="Logo Assainissement 81">
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col-center">
+                <h4>SITEMAP</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="travaux-assainissement.html">Travaux d'assainissement</a></li>
+                    <li><a href="inspection-video.html">Inspection de canalisation</a></li>
+                    <li><a href="nettoyage-de-puits.html">Travaux de nettoyage</a></li>
+                    <li><a href="location-wc.html">Location de WC</a></li>
+                </ul>
+                <div class="footer-divider-line"></div>
+                <div class="footer-contact-details">
+                    +33 5 63 98 48 96<br>
+                    assainissement81@assainissement81.com
+                </div>
+            </div>
+
+            <div class="footer-col-right">
+                <a href="contact.html" class="btn-footer-contact">Nous Contacter</a>
+                <div class="footer-legal-block">
+                    <div class="footer-legals">
+                        <span>Mentions légales</span>
+                        <span>CGV</span>
+                    </div>
+                    <div class="footer-copyright">
+                        © 2025 — Nicolas Delepaut<br>All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
