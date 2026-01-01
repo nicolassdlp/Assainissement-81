@@ -216,47 +216,61 @@ header {
 @media (max-width: 1024px) {
     .burger-menu {
         display: flex;
+        z-index: 1002;
+        /* Ensure above nav container */
+        position: relative;
     }
 
     .nav-container {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        position: fixed;
+        /* Fixed to viewport to avoid overflow issues */
+        top: 0;
+        right: -100%;
+        /* Start off-screen to the right */
+        width: 80%;
+        /* Drawer style */
+        height: 100vh;
         background-color: white;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        transform: translateY(-150%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 999;
-        /* Ensure it is above other content */
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease-in-out;
+        z-index: 1001;
+        /* Above header */
+        padding-top: 100px;
+        /* Space for close button or header */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
     }
 
     .nav-container.active {
-        transform: translateY(0);
+        right: 0;
+        /* Slide in */
     }
 
     .nav-links {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+        align-items: center;
+        width: 100%;
+        padding: 0;
         margin: 0;
         gap: 0;
     }
 
     .nav-links li {
         width: 100%;
+        text-align: center;
         padding: 15px 0;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-links a {
+        justify-content: center;
+        font-size: 1.1rem;
     }
 
     .nav-links li:last-child {
         border-bottom: none;
-    }
-
-    .nav-links a {
-        font-size: 16px;
-        width: 100%;
-        display: block;
     }
 
     .cta-btn {
